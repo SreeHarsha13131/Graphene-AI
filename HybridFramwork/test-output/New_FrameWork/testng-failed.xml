@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [New_FrameWork]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="com.framework.utilitites.Reporting"/>
+  </listeners>
+  <test name="BankingApp Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.framework.testCases.TC_EzyThemes_02">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="ezyThemes"/>
+        </methods>
+      </class> <!-- com.framework.testCases.TC_EzyThemes_02 -->
+    </classes>
+  </test> <!-- BankingApp Test(failed) -->
+  <test name="BankingApp Test1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.framework.testCases.TC_EzyThemes_02">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="ezyThemes"/>
+        </methods>
+      </class> <!-- com.framework.testCases.TC_EzyThemes_02 -->
+    </classes>
+  </test> <!-- BankingApp Test1(failed) -->
+</suite> <!-- Failed suite [New_FrameWork] -->

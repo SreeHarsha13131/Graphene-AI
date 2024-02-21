@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="New_FrameWork">
+	<listeners>
+		<listener class-name="com.framework.utilitites.Reporting" />
+	</listeners>
+
+	<test name="BankingApp Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<!-- <class name="com.framework.testCases.TC_Login_01" /> -->
+			<class name="com.framework.testCases.TC_Login_01" />
+			<class name="com.framework.testCases.TC_EzyThemes_03" />
+			<class name="com.framework.testCases.TC_EzyThemes_02" />
+		</classes>
+	</test>
+	
+	<test name="BankingApp Test1">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<!-- <class name="com.framework.testCases.TC_Login_01" /> -->
+			<class name="com.framework.testCases.TC_Login_01" />
+			<class name="com.framework.testCases.TC_EzyThemes_03" />
+			<class name="com.framework.testCases.TC_EzyThemes_02" />
+		</classes>
+	</test>	
+	
+</suite> 
